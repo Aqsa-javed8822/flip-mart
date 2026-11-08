@@ -22,7 +22,7 @@ The following screenshots showcase the website's design and functionality.
 ![FlipMart Product Page](screenshots/product-page.png)
 
 ### Contact Us Page
-![FlipMart Additional Pages](screenshots/contact.png)
+![FlipMart Additional Pages](screenshots/contact-us.png)
 
 *Note: Replace these image paths with your actual screenshot filenames after uploading them to the `screenshots` folder.*
 
