@@ -1,0 +1,26 @@
+{
+    "open sans": {
+        "normal": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/OpenSans-Normal",
+        "bold": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/OpenSans-Bold",
+        "italic": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/OpenSans-Italic",
+        "bold_italic": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/OpenSans-BoldItalic"
+    },
+    "segoe": {
+        "normal": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/Segoe-Normal",
+        "bold": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/Segoe-Bold",
+        "italic": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/Segoe-Italic",
+        "bold_italic": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/Segoe-BoldItalic"
+    },
+    "roboto slab": {
+        "normal": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/RobotoSlab-Normal",
+        "bold": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/RobotoSlab-Bold",
+        "italic": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/RobotoSlab-Italic",
+        "bold_italic": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/RobotoSlab-BoldItalic"
+    },
+    "currencies": {
+        "normal": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/currencies",
+        "bold": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/currencies",
+        "italic": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/currencies",
+        "bold_italic": "C:\/Users\/DUBAI LAPTOP\/Local Sites\/product-store\/app\/public\/wp-content\/uploads\/wpo_wcpdf_5708b49defd6f930b20ed10c9448ddad\/fonts\/currencies"
+    }
+}

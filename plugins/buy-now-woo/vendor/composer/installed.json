@@ -1,0 +1,50 @@
+{
+    "packages": [
+        {
+            "name": "niloys7/remote-admin-notification-client",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Niloys7/remote-admin-notification-client.git",
+                "reference": "694960070bb4e18ad3b4832d019922bf28714df7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Niloys7/remote-admin-notification-client/zipball/694960070bb4e18ad3b4832d019922bf28714df7",
+                "reference": "694960070bb4e18ad3b4832d019922bf28714df7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "time": "2023-04-18T20:32:47+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "class-remote-notification-client.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Niloy",
+                    "email": "niloys7live@gmail.com"
+                }
+            ],
+            "description": "Admin Notification client fo WordPress Plugins & Theme",
+            "support": {
+                "issues": "https://github.com/Niloys7/remote-admin-notification-client/issues",
+                "source": "https://github.com/Niloys7/remote-admin-notification-client/tree/main"
+            },
+            "install-path": "../niloys7/remote-admin-notification-client"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

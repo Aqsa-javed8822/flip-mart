@@ -1,0 +1,23 @@
+{
+    "name": "codeixer/buy-now-woo",
+    "description": "Buy your product only one step in the Product Detail page.",
+    "type": "woocommerce-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Codeixer",
+            "email": "support@codeixer.com"
+        }
+    ],
+   
+    "autoload": {
+        
+        "psr-4": {
+            "Buy_Now_Woo\\": "includes/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "niloys7/remote-admin-notification-client": "dev-main"
+    }
+}

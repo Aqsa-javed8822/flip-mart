@@ -1,0 +1,80 @@
+<?php
+
+/**
+ * Main ProductDescription class.
+ *
+ * @package RadiusTheme\SB
+ */
+
+namespace RadiusTheme\SB\Controllers\ThemesSupport\Helloelementor;
+
+// Do not allow directly accessing this file.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit( 'This script cannot be accessed directly.' );
+}
+
+/**
+ * Product Description class
+ */
+class WidgetsSupport {
+
+	/**
+	 * The single instance of the class.
+	 *
+	 * @var object
+	 */
+	protected static $instance = null;
+
+	/**
+	 * The single instance of the class.
+	 *
+	 * @var object
+	 */
+	private $widgets;
+
+	/**
+	 * Construct function
+	 */
+	private function __construct() {}
+	/**
+	 * Get class instance.
+	 *
+	 * @return object Instance.
+	 */
+	public static function instance( $widgets ) {
+		if ( ! self::$instance ) {
+			self::$instance = new self();
+		}
+		self::$instance->widgets = $widgets;
+		return self::$instance;
+	}
+
+	/**
+	 * The function name comes from the widget base name "rtsb-products-archive". This is for theme support prefix with "widget_controls".
+	 *
+	 * @return void
+	 */
+	public function widget_controls_rtsb_products_archive() {
+		add_filter( 'rtsb/elements/elementor/widgets/controls/rtsb-products-archive', [ $this, 'product_loop_widget_controls_support' ], 11 );
+	}
+	/**
+	 * Widget Field.
+	 *
+	 * @return array
+	 */
+	public function product_loop_widget_controls_support( $fields ) {
+		if ( $this->widgets->has_pagination ) {
+			$fields['prev_icon']['default'] = [
+				'value'   => 'fas fa-long-arrow-alt-left',
+				'library' => 'fa-solid',
+			];
+			$fields['next_icon']['default'] = [
+				'value'   => 'fas fa-long-arrow-alt-right',
+				'library' => 'fa-solid',
+			];
+		}
+		return $fields;
+	}
+
+
+}

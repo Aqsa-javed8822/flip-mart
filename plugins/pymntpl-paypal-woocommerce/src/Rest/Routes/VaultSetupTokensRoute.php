@@ -1,0 +1,94 @@
+<?php
+
+namespace PaymentPlugins\WooCommerce\PPCP\Rest\Routes;
+
+use PaymentPlugins\PayPalSDK\OrderApplicationContext;
+use PaymentPlugins\PayPalSDK\PaymentSource;
+use PaymentPlugins\PayPalSDK\PaymentToken;
+use PaymentPlugins\PayPalSDK\SetupToken;
+use PaymentPlugins\WooCommerce\PPCP\Admin\Settings\AdvancedSettings;
+use PaymentPlugins\WooCommerce\PPCP\CheckoutValidator;
+use PaymentPlugins\WooCommerce\PPCP\ContextHandler;
+use PaymentPlugins\WooCommerce\PPCP\Customer;
+use PaymentPlugins\WooCommerce\PPCP\Factories\CoreFactories;
+use PaymentPlugins\WooCommerce\PPCP\Payments\PaymentGateways;
+use PaymentPlugins\WooCommerce\PPCP\Traits\CheckoutRouteTrait;
+use PaymentPlugins\WooCommerce\PPCP\WPPayPalClient;
+
+class VaultSetupTokensRoute extends AbstractRoute {
+
+	use CheckoutRouteTrait;
+
+	private $client;
+
+	private $factories;
+
+	private $settings;
+
+	private $validator;
+
+	public function __construct( WPPayPalClient $client, CoreFactories $factories, AdvancedSettings $settings, CheckoutValidator $validator ) {
+		$this->client    = $client;
+		$this->factories = $factories;
+		$this->settings  = $settings;
+		$this->validator = $validator;
+	}
+
+	public function get_path() {
+		return 'vault/setup-tokens';
+	}
+
+	public function get_routes() {
+		return [
+			[
+				'methods'  => \WP_REST_Server::CREATABLE,
+				'callback' => [ $this, 'handle_request' ],
+				'args'     => [
+					'context'        => [
+						'required' => true
+					],
+					'payment_method' => [
+						'required' => true
+					]
+				]
+			]
+		];
+	}
+
+	public function handle_post_request( \WP_REST_Request $request ) {
+		/**
+		 * @var ContextHandler $context
+		 */
+		$context = wc_ppcp_get_container()->get( ContextHandler::class );
+		$context->set_context( $request->get_param( 'context' ) );
+
+		/**
+		 * @var PaymentGateways $payment_gateways
+		 */
+		$payment_gateways = wc_ppcp_get_container()->get( PaymentGateways::class );
+
+		$payment_method = $payment_gateways->get_gateway( $request->get_param( 'payment_method' ) );
+
+		if ( ! $payment_method ) {
+			throw new \Exception( __( 'Invalid payment method provided.', 'pymntpl-paypal-woocommerce' ) );
+		}
+
+		if ( $context->is_checkout() ) {
+			$this->populate_post_data( $request );
+		}
+
+		$this->validator->run(
+			$request,
+			$context->is_checkout() && $this->is_checkout_validation_enabled( $request ) && ! \wc_string_to_bool( $request->get_param( 'checkout_blocks' ) )
+		);
+
+		$this->factories->initialize( $payment_method );
+
+		$setup_token = $this->factories->setupToken->create( $context->get_context() );
+
+		$result = $this->client->setupTokens->create( $setup_token );
+
+		return $result;
+	}
+
+}

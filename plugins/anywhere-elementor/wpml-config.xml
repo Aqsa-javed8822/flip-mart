@@ -1,0 +1,27 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="copy">ae_custom_usage_area</custom-field>
+        <custom-field action="copy">ae_acf_repeater_name</custom-field>
+        <custom-field action="copy">ae_apply_global</custom-field>
+        <custom-field action="copy">ae_custom_usage_area</custom-field>
+        <custom-field action="copy">ae_elementor_template</custom-field>
+        <custom-field action="copy">ae_full_override</custom-field>
+        <custom-field action="copy">ae_post_template</custom-field>
+        <custom-field action="copy">ae_preview_post_ID</custom-field>
+        <custom-field action="copy">ae_render_mode</custom-field>
+        <custom-field action="copy">ae_rule_post_type</custom-field>
+        <custom-field action="copy">ae_rule_post_type_archive</custom-field>
+        <custom-field action="copy">ae_rule_taxonomy</custom-field>
+        <custom-field action="copy">ae_usage</custom-field>
+        <custom-field action="copy">ae_preview_author</custom-field>
+        <custom-field action="copy">ae_preview_term</custom-field>
+        <custom-field action="copy">ae_enable_canvas</custom-field>
+    </custom-fields>
+    <custom-term-fields>
+        <custom-term-field action="copy">ae_term_post_template</custom-term-field>
+        <custom-term-field action="copy">ae_term_template</custom-term-field>
+    </custom-term-fields>
+    <custom-types>
+        <custom-type translate="1" display-as-translated="1">ae_global_templates</custom-type>
+    </custom-types>
+</wpml-config>
