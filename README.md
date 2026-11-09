@@ -39,6 +39,12 @@ The following screenshots showcase the website's design and functionality.
 ### Homepage Responsive
 ![FlipMart Homepage](screenshots/homepagef.png)
 
+### Contact Page Responsive
+![FlipMart Homepage](screenshots/contactf.png)
+
+
+### About Us Page Responsive
+![FlipMart Homepage](screenshots/aboutf.png)
 
 
 
