@@ -36,6 +36,10 @@ The following screenshots showcase the website's design and functionality.
 ### Pop Up
 ![FlipMart Pop Up Page](screenshots/popup.png)
 
+### Homepage Responsive
+![FlipMart Homepage](screenshots/homepagef.png)
+
+
 
 
 ---
