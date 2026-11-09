@@ -33,6 +33,8 @@ The following screenshots showcase the website's design and functionality.
 ### Add to Cart Page
 ![FlipMart Add to Cart Page](screenshots/cart.png)
 
+### Pop Up
+![FlipMart Pop Up Page](screenshots/popup.png)
 
 
 
