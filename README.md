@@ -22,7 +22,8 @@ The following screenshots showcase the website's design and functionality.
 ![FlipMart Product Page](screenshots/product-page.png)
 
 ### About Us Page
-![FlipMart About Us Page](screenshots/about.png)
+![FlipMart About Us Page](screenshots/Product store.png
+)
 
 
 
