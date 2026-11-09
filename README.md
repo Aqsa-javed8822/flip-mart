@@ -1,4 +1,4 @@
-﻿# 🛍️ FlipMart – WordPress E-Commerce Website
+﻿#  FlipMart – WordPress E-Commerce Website
 
 **FlipMart** is a responsive e-commerce website developed using WordPress and WooCommerce. The project demonstrates the design and development of an online shopping store, including product listings, shopping functionality, and a user-friendly interface.
 
@@ -8,7 +8,7 @@ This repository contains the WordPress website files, themes, plugins, media upl
 
 ---
 
-## 📸 Website Screenshots
+##  Website Screenshots
 
 The following screenshots showcase the website's design and functionality.
 
@@ -40,7 +40,7 @@ The following screenshots showcase the website's design and functionality.
 
 ---
 
-## ✨ Features
+##  Features
 
 - Modern and responsive e-commerce design
 - Product listing and shopping pages
@@ -54,7 +54,7 @@ The following screenshots showcase the website's design and functionality.
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -69,7 +69,7 @@ The following screenshots showcase the website's design and functionality.
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```text
 flip-mart/
@@ -101,7 +101,7 @@ flip-mart/
 
 ---
 
-## 💻 How to Run This Website Locally
+##  How to Run This Website Locally
 
 Since the website is not hosted online, follow these instructions to view the original website on your computer.
 
@@ -203,7 +203,7 @@ Use the existing WordPress administrator credentials if available. Otherwise, re
 
 ---
 
-## 👩‍💻 Project Purpose
+##  Project Purpose
 
 This project was developed as part of my web development learning and portfolio-building journey.
 
@@ -213,7 +213,7 @@ The project represents my ability to build and configure a functional e-commerce
 
 ---
 
-## 👩‍💻 Developer
+##  Developer
 
 **Aqsa Javed**
 
