@@ -30,6 +30,10 @@ The following screenshots showcase the website's design and functionality.
 ### Track Order Page
 ![FlipMart Contact Us Page](screenshots/track.png)
 
+### Add to Cart Page
+![FlipMart Add to Cart Page](screenshots/cart.png)
+
+
 
 
 ---
